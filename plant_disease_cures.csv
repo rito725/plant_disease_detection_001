@@ -1,0 +1,39 @@
+Disease Name,Cure
+Apple__Apple_scab,Cure_A
+Apple_Black_rot,Cure_B
+Apple_Cedar_apple_rust,Cure_C
+Apple_healthy,Cure_D
+Blueberry_healthy,Cure_E
+Cherry(including_sour)Powdery_mildew,Cure_F
+Cherry(including_sour)healthy,Cure_G
+Corn(maize)Cercospora_leaf_spot Gray_leaf_spot,Cure_H
+Corn(maize)Common_rust,Cure_I
+Corn_(maize)Northern_Leaf_Blight,Cure_J
+Corn(maize)healthy,Cure_K
+Grape_Black_rot,Cure_L
+Grape_Esca(Black_Measles),Cure_M
+Grape__Leaf_blight(Isariopsis_Leaf_Spot),Cure_N
+Grape__healthy,Cure_O
+Orange_Haunglongbing(Citrus_greening),Cure_P
+Peach__Bacterial_spot,Cure_Q
+Peach_healthy,Cure_R
+"Pepper,_bell_Bacterial_spot",Cure_S
+"Pepper,_bell_healthy",Cure_T
+Potato_Early_blight,Cure_U
+Potato_Late_blight,Cure_V
+Potato_healthy,Cure_W
+Raspberry_healthy,Cure_X
+Soybean_healthy,Cure_Y
+Squash_Powdery_mildew,Cure_Z
+Strawberry_Leaf_scorch,Cure_[
+Strawberry_healthy,Cure_\
+Tomato_Bacterial_spot,Cure_]
+Tomato_Early_blight,Cure_^
+Tomato_Late_blight,Cure__Tomato late blight disease to be cured py potassium bicarbonate
+Tomato_Leaf_Mold,Cure_`
+Tomato_Septoria_leaf_spot,Cure_a
+Tomato_Spider_mites Two-spotted_spider_mite,Cure_b
+Tomato_Target_Spot,Cure_c
+Tomato_Tomato_Yellow_Leaf_Curl_Virus,Cure_d
+Tomato_Tomato_mosaic_virus,Cure_e
+Tomato__healthy,Cure_f

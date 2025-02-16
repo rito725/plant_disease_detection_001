@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plant Disease Detection</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            background: #4CAF50;
+            padding: 15px;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 14px 20px;
+        }
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: white;
+            box-shadow: 0px 0px 5px grey;
+            border-radius: 5px;
+            min-width: 150px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            display: block;
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+        }
+        .dropdown-content a:hover {
+            background: #e8f5e9;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .container {
+            text-align: center;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px 0px grey;
+            border-radius: 10px;
+            width: 60%;
+            min-height: 300px;
+        }
+        .result-container {
+            margin-top: 20px;
+            padding: 20px;
+            background: #e8f5e9;
+            box-shadow: 0px 0px 10px grey;
+            border-radius: 10px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <div class="dropdown">
+            <a href="#">Account ▾</a>
+            <div class="dropdown-content">
+                <a href="#">Available Credits: {{ available_credits }}</a>
+                <a href="{{ url_for('add_card') }}">Add Credit Card</a>
+            </div>
+        </div>
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </div>
+
+    <div class="container">
+        <h2>Plant Disease Detection</h2>
+        <form action="" method="POST" enctype="multipart/form-data">
+            <label>Select an image:</label>
+            <input type="file" name="file" accept="image/*" required>
+            <button type="submit">Upload & Predict</button>
+        </form>
+
+        {% if prediction %}
+            <div class="result-container">
+                <h3>Prediction: {{ prediction }}</h3>
+                <img src="{{ image_path }}" alt="Uploaded Image" width="300">
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
